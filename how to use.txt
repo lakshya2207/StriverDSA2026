@@ -1,0 +1,1 @@
+pre ctrl shift b to run code take input fm input and print to output

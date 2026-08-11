@@ -2,41 +2,17 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "C++ Build",
+            "label": "compile and run",
             "type": "shell",
-            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "command": "cmd.exe",
             "args": [
-                "-std=c++17",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "/c",
+                "g++ -std=c++17 -o \"${fileBasenameNoExtension}\" \"${file}\" && .\\${fileBasenameNoExtension} < input.txt > output.txt"
             ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ]
-        },
-        {
-            "label": "C++ Run with input.txt",
-            "type": "shell",
-            "dependsOn": "C++ Build",
-            "command": "Get-Content '${fileDirname}\\input.txt' | & '${fileDirname}\\${fileBasenameNoExtension}.exe' | Tee-Object -FilePath '${fileDirname}\\output.txt'",
-            "options": {
-                "cwd": "${fileDirname}",
-                "shell": {
-                    "executable": "powershell.exe",
-                    "args": [
-                        "-NoProfile",
-                        "-ExecutionPolicy",
-                        "Bypass",
-                        "-Command"
-                    ]
-                }
-            },
-            "problemMatcher": []
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
-}
+  }
