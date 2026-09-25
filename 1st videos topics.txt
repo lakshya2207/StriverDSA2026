@@ -1,0 +1,15 @@
+#include 
+iostream
+using namespace std 
+
+data types
+if else
+switch
+function
+pass by value 
+pass by reference
+loops
+array
+string
+2d array
+input output  single line multiple line 

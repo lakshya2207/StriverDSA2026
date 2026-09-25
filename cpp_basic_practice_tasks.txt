@@ -1,0 +1,599 @@
+C++ BASIC PRACTICE TASKS
+========================
+
+Topics:
+- #include <iostream>
+- using namespace std;
+- Data Types
+- if / else
+- switch
+- Functions
+- Pass by Value
+- Pass by Reference
+- Arrays
+- Strings
+- 2D Arrays
+- Input / Output: Single-line and Multiple-line input
+
+NOTE:
+Loops (for, while, do-while) are missing from the original topic list.
+Learn loops before arrays because most array/string/2D-array problems use loops.
+
+
+0. BASIC C++ SETUP + iostream
+-----------------------------
+
+Task 1 — Hello World
+Print:
+Hello, World!
+
+Task 2 — Personal Information
+Take:
+- name
+- age
+- city
+
+Print all information in a formatted way.
+
+Task 3 — Basic Calculator
+Take two integers and print:
+- Sum
+- Difference
+- Product
+- Quotient
+- Remainder
+
+
+1. DATA TYPES
+-------------
+
+Practice:
+- int
+- float
+- double
+- char
+- bool
+- string
+
+Task 1
+Take a student's:
+- name
+- age
+- percentage
+- grade
+- whether they passed
+
+Print all information.
+
+Task 2
+Take temperature in Celsius and convert it to Fahrenheit.
+
+Task 3
+Take the radius of a circle and calculate:
+- diameter
+- circumference
+- area
+
+Task 4 — Type Understanding
+Answer without running the code:
+
+int a = 10;
+double b = 2.5;
+char c = 'A';
+bool d = true;
+
+What is the type of each variable?
+
+Also explain why:
+
+5 / 2
+5.0 / 2
+
+give different results.
+
+
+2. IF / ELSE
+------------
+
+Task 1
+Take a number and determine whether it is:
+- positive
+- negative
+- zero
+
+Task 2
+Check whether a number is:
+- even
+- odd
+
+Task 3
+Take a person's age and determine whether they can vote.
+
+Task 4
+Take three numbers and print the largest.
+
+Task 5
+Take marks and print:
+
+90-100 -> A
+80-89  -> B
+70-79  -> C
+60-69  -> D
+Below 60 -> F
+
+Task 6 — Slightly Harder
+Take three sides of a triangle and determine whether the triangle is valid.
+
+
+3. SWITCH
+---------
+
+Task 1 — Calculator
+
+Input:
+10
+5
++
+
+Output:
+15
+
+Use switch for:
++
+-
+*
+/
+%
+
+Task 2 — Days
+
+Input:
+3
+
+Output:
+Wednesday
+
+Task 3 — Menu
+
+Create:
+
+1. Pizza
+2. Burger
+3. Pasta
+4. Exit
+
+Take the user's choice and print the selected item.
+
+Question:
+When would you prefer switch over a long if-else-if chain?
+
+
+4. FUNCTIONS
+------------
+
+Task 1
+Create:
+
+void hello()
+
+that prints:
+Hello World
+
+Task 2
+Create:
+
+int add(int a, int b)
+
+Task 3
+Create functions for:
+
+square()
+cube()
+isEven()
+maximum()
+
+Task 4
+Create:
+
+int factorial(int n)
+
+Example:
+5 -> 120
+
+Task 5
+Create:
+
+bool isPrime(int n)
+
+
+5. PASS BY VALUE
+----------------
+
+Task 1
+
+Create:
+
+void change(int x)
+
+Inside the function:
+x = 100;
+
+Then:
+
+int a = 10;
+change(a);
+cout << a;
+
+Predict the output BEFORE running it.
+
+Then explain why.
+
+Task 2
+Write:
+
+void doubleValue(int x)
+
+Observe what happens to the original variable.
+
+
+6. PASS BY REFERENCE
+--------------------
+
+Task 1
+Repeat the pass-by-value change example using:
+
+void change(int &x)
+
+Observe the difference.
+
+Task 2
+Create:
+
+void swapNumbers(int &a, int &b)
+
+Example:
+
+Before: 10 20
+After:  20 10
+
+Task 3 — Important
+Create:
+
+void sortTwo(int &a, int &b)
+
+so that the smaller number is always stored in a.
+
+Example:
+
+Input: 20 10
+Output: 10 20
+
+
+7. ARRAYS
+---------
+
+Task 1
+Take 5 integers into an array and print them.
+
+Task 2
+Find the sum of all elements.
+
+Task 3
+Find the largest element.
+
+Task 4
+Find the smallest element.
+
+Task 5
+Count how many numbers are even and odd.
+
+Task 6
+Reverse an array.
+
+Input:
+1 2 3 4 5
+
+Output:
+5 4 3 2 1
+
+Task 7
+Search for a number.
+
+Input:
+Array: 10 20 30 40 50
+Search: 30
+
+Output:
+Found at index 2
+
+Task 8 — DSA Preparation
+Find the second largest element in an array.
+
+Do NOT use sorting.
+
+
+8. STRINGS
+----------
+
+Task 1
+Take a string and print it.
+
+Task 2
+Find its length.
+
+Task 3
+Count the number of vowels.
+
+Example:
+Hello World
+
+Output:
+Vowels: 3
+
+Task 4
+Reverse a string.
+
+Input:
+Hello
+
+Output:
+olleH
+
+Task 5
+Check whether a string is a palindrome.
+
+Examples:
+madam -> palindrome
+hello -> not palindrome
+
+Task 6
+Count:
+- vowels
+- consonants
+- digits
+- spaces
+
+Task 7
+Find the frequency of a particular character.
+
+Input:
+String: banana
+Character: a
+
+Output:
+3
+
+
+9. 2D ARRAYS
+------------
+
+Task 1
+Take a 3 x 3 matrix and print it.
+
+Task 2
+Find the sum of all elements.
+
+Task 3
+Find the largest element.
+
+Task 4
+Print the matrix row by row.
+
+Example:
+
+1 2 3
+4 5 6
+7 8 9
+
+Output:
+
+Row 1: 1 2 3
+Row 2: 4 5 6
+Row 3: 7 8 9
+
+Task 5 — Main Diagonal
+For:
+
+1 2 3
+4 5 6
+7 8 9
+
+Print:
+
+1 5 9
+
+Task 6
+Find the sum of the main diagonal.
+
+Task 7
+Print the transpose.
+
+Input:
+
+1 2 3
+4 5 6
+
+Output:
+
+1 4
+2 5
+3 6
+
+
+10. INPUT / OUTPUT PRACTICE
+---------------------------
+
+Task 1 — Single-line Input
+
+Input:
+10 20 30
+
+Store all three values.
+
+Task 2 — Multiple-line Input
+
+Input:
+10
+20
+30
+
+Read all three.
+
+Task 3 — String With Spaces
+
+Input:
+Lakshya Sharma
+
+Use getline() to read the complete name.
+
+Understand the difference between:
+
+cin >>
+
+and:
+
+getline()
+
+and when each should be used.
+
+
+11. FINAL COMBINED CHALLENGES
+-----------------------------
+
+Challenge 1 — Student Result System
+
+Take:
+
+Student name
+Roll number
+5 subject marks
+
+Calculate:
+
+Total
+Percentage
+Grade
+Pass/Fail
+
+Use:
+- variables
+- arrays
+- functions
+- if/else
+- strings
+
+
+Challenge 2 — Number Analyzer
+
+Input:
+10 numbers
+
+Your program should find:
+
+Sum
+Average
+Largest
+Smallest
+Even count
+Odd count
+Positive count
+Negative count
+
+Use functions wherever possible.
+
+
+Challenge 3 — Mini Calculator
+
+Create a menu:
+
+===== CALCULATOR =====
+
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Modulus
+6. Exit
+
+Use:
+- switch
+- functions
+- loops
+
+
+Challenge 4 — Matrix Analyzer
+
+Take a 3 x 3 matrix and calculate:
+
+Sum
+Largest
+Smallest
+Main diagonal sum
+Secondary diagonal sum
+Transpose
+
+
+Challenge 5 — String Analyzer
+
+Input a complete sentence and calculate:
+
+Number of characters
+Number of words
+Number of vowels
+Number of consonants
+Number of digits
+Number of spaces
+
+
+12. RECOMMENDED LEARNING ORDER
+------------------------------
+
+Follow this order:
+
+1. iostream / Basic I/O
+        |
+        v
+2. Data Types
+        |
+        v
+3. if / else
+        |
+        v
+4. switch
+        |
+        v
+5. Functions
+        |
+        v
+6. Pass by Value
+        |
+        v
+7. Pass by Reference
+        |
+        v
+8. Arrays
+        |
+        v
+9. Strings
+        |
+        v
+10. 2D Arrays
+        |
+        v
+11. Combined Problems
+
+
+PRACTICE RULE
+-------------
+
+Before moving to the next topic, try to solve around 70–80% of the tasks
+without looking at solutions.
+
+For each coding problem:
+1. Understand the input.
+2. Decide the expected output.
+3. Write the logic in plain English.
+4. Code it yourself.
+5. Test with normal cases.
+6. Test with edge cases.
+7. Only then look for a solution if you are stuck.
