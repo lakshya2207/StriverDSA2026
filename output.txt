@@ -1,2 +1,3 @@
-addition 120 
-diffrence 80
+Diameter : 30
+Circumference : 94.2478
+Area : 706.858
