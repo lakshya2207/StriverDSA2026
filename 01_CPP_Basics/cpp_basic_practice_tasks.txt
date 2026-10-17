@@ -7,6 +7,7 @@ Topics:
 - Data Types
 - if / else
 - switch
+- Loops (for, while, do-while)
 - Functions
 - Pass by Value
 - Pass by Reference
@@ -16,7 +17,7 @@ Topics:
 - Input / Output: Single-line and Multiple-line input
 
 NOTE:
-Loops (for, while, do-while) are missing from the original topic list.
+Loops are covered right after switch and before Functions.
 Learn loops before arrays because most array/string/2D-array problems use loops.
 
 
@@ -168,7 +169,86 @@ Question:
 When would you prefer switch over a long if-else-if chain?
 
 
-4. FUNCTIONS
+4. LOOPS
+--------
+
+Task 1 — For Loop Basics
+Print numbers from 1 to 10.
+
+Task 2 — While Loop Basics
+Print numbers from 10 down to 1.
+
+Task 3 — Do-While Loop
+Take a number from the user and keep asking for a new one until they enter 0.
+
+Task 4
+Print the sum of numbers from 1 to N.
+
+Task 5
+Print the factorial of a number using a loop.
+
+Task 6
+Print all even numbers between 1 and N.
+
+Task 7
+Print the multiplication table of a number.
+
+Input:
+5
+
+Output:
+5 x 1 = 5
+5 x 2 = 10
+...
+5 x 10 = 50
+
+Task 8
+Count the number of digits in a number.
+
+Input:
+12345
+
+Output:
+5
+
+Task 9
+Reverse a number.
+
+Input:
+1234
+
+Output:
+4321
+
+Task 10
+Check whether a number is a palindrome.
+
+Example:
+121 -> palindrome
+123 -> not a palindrome
+
+Task 11
+Print the Fibonacci series up to N terms.
+
+Task 12 — Nested Loops
+Print a pattern like:
+
+*
+* *
+* * *
+* * * *
+
+Task 13 — Slightly Harder
+Find the sum of digits of a number, then repeat the process until the result is a single digit.
+
+Example:
+1234 -> 1+2+3+4 = 10 -> 1+0 = 1
+
+Question:
+When would you prefer a while loop over a for loop, and vice versa?
+
+
+5. FUNCTIONS
 ------------
 
 Task 1
@@ -206,7 +286,7 @@ Create:
 bool isPrime(int n)
 
 
-5. PASS BY VALUE
+6. PASS BY VALUE
 ----------------
 
 Task 1
@@ -236,7 +316,7 @@ void doubleValue(int x)
 Observe what happens to the original variable.
 
 
-6. PASS BY REFERENCE
+7. PASS BY REFERENCE
 --------------------
 
 Task 1
@@ -269,7 +349,7 @@ Input: 20 10
 Output: 10 20
 
 
-7. ARRAYS
+8. ARRAYS
 ---------
 
 Task 1
@@ -312,7 +392,7 @@ Find the second largest element in an array.
 Do NOT use sorting.
 
 
-8. STRINGS
+9. STRINGS
 ----------
 
 Task 1
@@ -364,7 +444,7 @@ Output:
 3
 
 
-9. 2D ARRAYS
+10. 2D ARRAYS
 ------------
 
 Task 1
@@ -420,7 +500,7 @@ Output:
 3 6
 
 
-10. INPUT / OUTPUT PRACTICE
+11. INPUT / OUTPUT PRACTICE
 ---------------------------
 
 Task 1 — Single-line Input
@@ -457,7 +537,7 @@ getline()
 and when each should be used.
 
 
-11. FINAL COMBINED CHALLENGES
+12. FINAL COMBINED CHALLENGES
 -----------------------------
 
 Challenge 1 — Student Result System
@@ -545,7 +625,7 @@ Number of digits
 Number of spaces
 
 
-12. RECOMMENDED LEARNING ORDER
+13. RECOMMENDED LEARNING ORDER
 ------------------------------
 
 Follow this order:
@@ -562,25 +642,28 @@ Follow this order:
 4. switch
         |
         v
-5. Functions
+5. Loops
         |
         v
-6. Pass by Value
+6. Functions
         |
         v
-7. Pass by Reference
+7. Pass by Value
         |
         v
-8. Arrays
+8. Pass by Reference
         |
         v
-9. Strings
+9. Arrays
         |
         v
-10. 2D Arrays
+10. Strings
         |
         v
-11. Combined Problems
+11. 2D Arrays
+        |
+        v
+12. Combined Problems
 
 
 PRACTICE RULE
