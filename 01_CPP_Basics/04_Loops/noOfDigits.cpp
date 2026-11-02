@@ -1,0 +1,19 @@
+// Task 8
+// Count the number of digits in a number.
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n=0,c=0;
+    cin >> n;
+    cout << n << " have ";
+    while(n%10>0){~
+        c++;
+        n=n/10;
+    }
+    cout << c << " digits\n";
+
+    return 1;
+}

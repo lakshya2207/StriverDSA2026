@@ -16,6 +16,30 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "auto-commit watcher",
+      "type": "shell",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-WindowStyle",
+        "Hidden",
+        "-File",
+        "${workspaceFolder}\\scripts\\auto-commit-watcher.ps1"
+      ],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "close": true
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
     }
   ]
 }
