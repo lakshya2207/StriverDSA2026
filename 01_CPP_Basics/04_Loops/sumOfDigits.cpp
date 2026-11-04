@@ -6,9 +6,9 @@ using namespace std;
 
 int sumOfDgits(int n ){
     int sum =0;
-    cout << n%10>0 << "\n";
-    cout << n>=0 << "\n";
-    while(n%10>0 && n>=0){
+    // cout << n%10>0 << "\n";
+    // cout << n>=0 << "\n";
+    while(n>0){
         sum =sum+n%10;
         n=n/10;
     }
@@ -18,7 +18,10 @@ int sumOfDgits(int n ){
 int main(){
     int n;
     cin >> n;
-    cout <<sumOfDgits(n);
+    do{
+        cout << "sum of digits of " << n << "is : " << sumOfDgits(n) << "\n";
+        n= sumOfDgits(n);
+    }while((n>10));
 
     return 0;
 }

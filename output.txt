@@ -1,1 +1,2 @@
-0
+sum of digits of 2222222is : 14
+sum of digits of 14is : 5

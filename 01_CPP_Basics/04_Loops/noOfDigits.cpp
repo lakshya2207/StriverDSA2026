@@ -9,7 +9,7 @@ int main(){
     int n=0,c=0;
     cin >> n;
     cout << n << " have ";
-    while(n%10>0){~
+    while(n>0){
         c++;
         n=n/10;
     }
