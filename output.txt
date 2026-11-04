@@ -1,2 +1,2 @@
-sum of digits of 2222222is : 14
-sum of digits of 14is : 5
+Before swap : a,b = 100 200
+After swap : a,b = 200 100

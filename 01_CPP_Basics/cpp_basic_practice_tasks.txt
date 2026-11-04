@@ -246,7 +246,7 @@ Example:
 
 Question:
 When would you prefer a while loop over a for loop, and vice versa?
-while 
+while over for
 
 5. FUNCTIONS
 ------------
