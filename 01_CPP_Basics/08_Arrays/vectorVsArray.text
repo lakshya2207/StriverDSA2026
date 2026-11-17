@@ -1,0 +1,60 @@
+// text
+
+// ```text
+//              VECTOR vs ARRAY IN C++
+
+// ------------------------------------------------------------
+// FEATURE              ARRAY                 VECTOR
+// ------------------------------------------------------------
+// Declaration          int arr[5];            vector<int> arr;
+
+// Size                 Fixed                  Dynamic
+
+// Size retrieval       sizeof(arr)/           arr.size()
+//                      sizeof(arr[0])
+
+// Add element           Not directly           arr.push_back(10)
+
+// Remove element        Not directly           arr.pop_back()
+
+// Memory               Contiguous             Contiguous
+
+// Header file           Not required           #include <vector>
+
+// Access element        arr[i]                 arr[i]
+
+// Pass to function      int arr[], int n       vector<int> &arr
+
+// Insertion             Not directly           arr.insert()
+
+// Deletion              Not directly           arr.erase()
+
+// Sorting               sort(arr, arr+n)       sort(arr.begin(),
+//                                                arr.end())
+// ------------------------------------------------------------
+
+// VECTOR FUNCTIONS:
+
+// 1. arr.size()       - Returns number of elements
+// 2. arr.push_back()  - Adds element at the end
+// 3. arr.pop_back()   - Removes last element
+// 4. arr.front()      - Returns first element
+// 5. arr.back()       - Returns last element
+// 6. arr.empty()      - Checks if vector is empty
+// 7. arr.clear()      - Removes all elements
+// 8. arr.begin()      - Iterator to first element
+// 9. arr.end()        - Iterator past last element
+
+// DECLARATION EXAMPLES:
+
+// Array:
+// int arr[5] = {1, 2, 3, 4, 5};
+
+// Vector:
+// vector<int> arr = {1, 2, 3, 4, 5};
+
+// DSA TIP:
+// Prefer vectors in most DSA problems because they
+// support dynamic resizing and provide useful built-in
+// functions.
+// ```
