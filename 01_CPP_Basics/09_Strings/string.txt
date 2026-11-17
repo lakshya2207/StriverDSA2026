@@ -1,0 +1,53 @@
+Category
+
+Functions and Operators
+
+Functionality
+
+String Length	
+length() or size()
+
+It will return the length of the string.
+Accessing Characters	
+Indexing (using array[index])
+
+To access individual characters using array indexing.
+at()
+
+Used to access a character at a specified index.
+Appending and Concatenating Strings	
++ Operator
+
++ operator is used to concatenate two strings.
+append()
+
+The append() function adds one string to the end of another.
+String Comparison	
+== Operator
+
+You can compare strings using the == operator.
+compare()
+
+The compare() function returns an integer value indicating the comparison result.
+Substrings	
+substr()
+
+Use the substr() function to extract a substring from a string.
+Searching	
+find()
+
+The find() function returns the position of the first occurrence of a substring.
+Modifying Strings	
+replace()
+
+Use the replace() function to modify a part of the string.
+insert()
+
+The insert() function adds a substring at a specified position.
+erase()
+
+Use the erase() function to remove a part of the string.
+Conversion	
+c_str()
+
+To obtain a C-style string from a std::string, you can use the c_str() function.
